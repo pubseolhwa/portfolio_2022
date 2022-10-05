@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hELLO. MY PORTFOLIO.</title>
+
+    <!-- 미리보기 이미지 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="http://pubseolhwa.dothome.co.kr/">
+    <meta property="og:description" content="안녕하세요, 한설화 포트폴리오입니다.">
+    <meta property="og:image" content="../img/icon-me.jpg">
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <div id="cursor"></div>
+   
+    <div class="sub-title">
+        <div id="goMain"><a href="../index.html">go main</a></div>
+        <div class="dot"></div>
+        <h2>about me and career</h2>
+    </div>
+
+    <div id="skill">
+
+        <div class="profile">
+            <div class="my-id">
+                <img src="../img/icon-me.jpg" alt="img">
+                <p class="name">Han Seol Hwa</p>
+                <p class="age">Publisher / 33</p>
+            </div>
+            <div class="info">
+                <ul class="sns">
+                    <li><a href="#" target="_blank"><i><img src="../img/icon-git.png"></i> git</a></li>
+                    <li><a href="https://www.pinterest.co.kr/tjfghk3486/" target="_blank"><i><img src="../img/icon-pinterest.png"></i> pinterest</a></li>
+                    <li><a href="https://www.instagram.com/___hansh/" target="_blank"><i><img src="../img/icon-instar.png"></i> instagram</a></li>
+                </ul>
+                <div class="box">
+                    <div class="ico"><i><img src="../img/icon-phone.png"></i> +82 10-9220-3486</div>
+                    <div class="ico"><i><img src="../img/icon-home.png"></i> Seoul  Geumcheon-gu, Seoul</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-box">
+                <div class="sec-title">skill</div>
+                <div class="skill-bar">
+                    <div class="progress-title">HTML/CSS</div>
+                    <div class="meter">
+                        <span style="width: 100%">100%</span>
+                    </div>
+                    <div class="progress-title">jQuery</div>
+                    <div class="meter">
+                        <span style="width: 85%">85%</span>
+                    </div>
+                    <div class="progress-title">Javascript</div>
+                    <div class="meter">
+                        <span style="width: 65%">65%</span>
+                    </div>
+                    <div class="progress-title">Vue.js</div>
+                    <div class="meter">
+                        <span style="width: 20%">20%</span>
+                    </div>
+                    <div class="progress-title">react</div>
+                    <div class="meter">
+                        <span style="width: 20%">20%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="sec-title">career</div>
+
+                <div class="career_line">
+                    <ol class="career_list">
+                        <li><span>㈜유니드컴즈</span></li>
+                        <li><span>㈜금솔커뮤니케이션</span></li>
+                        <li><span>생각더하기느낌</span></li>
+                        <li><span>제스아이앤씨</span></li>
+                        <li><span>케이엘큐브(프리랜서)</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="foot-text">Made by Han seol hwa _ Thank you for reviewing my portfolio:)</div>
+    </footer>
+    
+    <script src="../js/lib/jquery-1.12.4.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <script>
+        //progress
+        $(".meter > span").each(function () {
+            $(this).data("origWidth", $(this).width()).width(0).animate({width: $(this).data("origWidth")},1200);
+        });
+    </script>
+
+</body>
+</html>
